@@ -174,7 +174,7 @@
  * mapやfilterを使った配列の処理
  */
 
-const nameArr = ["田中", "山田", "津田"];
+// const nameArr = ["田中", "山田", "津田"];
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index}番目は${nameArr[index]}です。`);
 // }
@@ -192,11 +192,37 @@ const nameArr = ["田中", "山田", "津田"];
 // });
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name, index) => {
-  if (name === "津田") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name, index) => {
+//   if (name === "津田") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });*
+// console.log(newNameArr);
+
+/**
+ * 論理演算子の本当の意味を知ろう &&
+ *
+ */
+
+// const flag1 = true;
+// const flag2 = false;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// }
+
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueになります");
+// }
+
+// || は左側がfalseなら右側を返す
+// const num = 100;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+//  &&は左側がture奈良右側を返す
+// const num2 = null;
+// const fee = num2 && "なんか設定されました。";
+// console.log(fee);
